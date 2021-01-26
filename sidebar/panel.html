@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="panel.css"/>
+    <link rel="stylesheet" href="buttons.min.css"/>
+  </head>
+
+<body>
+
+  <div class="card">
+    <div id="mod-text" class="mod-text">
+      <span style="margin-right:40px">modify this page</span>
+      <span class="switch">
+        <label class="switch__label">
+          <input type="checkbox" class="switch__input" id="mod-switch"/>
+          <span class="switch__content"></span>
+          <span class="switch__circle"></span>
+        </label>
+      </span>
+    </div>
+  </div>
+
+  <div class="card2">
+    <div>
+      <hr class="hr-text" data-content="Settings">
+    </div>
+
+    <div class="settings">
+      <div class="setting">
+        <span>region</span>
+        <span class="region">
+          <select name="region" id="region">
+            <option value="jp" selected>jp</option>
+            <option value="us">us/uk</option>
+            <option value="de">de</option>
+            <option value="es">es</option>
+            <option value="fr">fr</option>
+            <option value="it">it</option>
+          </select>
+        </span>    
+      </div>
+      <div class="setting">
+        <span>version</span>
+        <span class="version">
+          <select name="version" id="version">
+            <option value="standard-onetime" selected>Standard One-time Checkout</option>
+            <option value="standard-autopay">Standard Recurring Checkout</option>
+            <option value="maxo-onetime">MAXO Checkout</option>
+            <option value="maxo-recurring">MAXO Recurring Checkout</option>
+          </select>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card2">
+  <div>
+    <hr class="hr-text" data-content="Character">
+  </div>
+
+  <div class="character-div">
+    <span style="margin-right:20px">bold</span>
+    <button id="boldbutton" class="button button-pill button-flat button-small character-button">change　or　quit</button>
+  </div>
+
+  <div class="character-div">
+    <span style="margin-right:20px">size</span>
+    <button id="fontbutton" class="button button-pill button-flat button-small character-button">change font size</button>
+    <input id="fontsize" class="fontsize" type="number" value="5" min="1" required step="0.5">
+    </div>
+  </div>
+
+</div>
+
+ <div class="card2">
+  <div>
+    <hr class="hr-text" data-content="Image">
+  </div>
+
+  <div id="standard-payment">
+    <div>
+      <p>Amazon Pay Login Button</p>
+      <div><img id="loginbuttonimg" src="https://d1oct1bdmx33tz.cloudfront.net/default/jp/live/lwa/gold/x-large/LwA.png" alt="amazon-pay-login-button"></div>
+    </div>
+  
+    <div>
+      <p>Amazon Pay Button</p>
+      <div><img id="paybuttonimg" src="https://d1oct1bdmx33tz.cloudfront.net/default/jp/live/lwa/gold/x-large/PwA.png" alt="amazon-pay-button"></div>
+    </div>
+  
+    <div>
+      <p>Original Image</p>
+      <div><img id="originalimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/common/originalimg.png" alt="amazon-pay-address"></div>
+    </div>
+  
+    <div class="jp-imgs region-imgs">
+      <p>Account</p>
+      <div><img id="accountimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/account.jpg" alt="account-registration"></div>
+    </div>
+    
+    <!--
+    <div>
+      <p>Space</p>
+      <div><img id="spaceimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/common/space.png" alt="amazon-pay-address"></div>
+    </div>
+    -->
+
+    <div>
+      <p>Address</p>
+      <div><img id="addressimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/address.jpg" alt="amazon-pay-address"></div>
+    </div>
+  
+    <div>
+      <p>Payment</p>
+      <div><img id="paymentimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/payment.jpg" alt="amazon-pay-payment"></div>
+    </div>
+  
+    <div>
+      <p>Address&Payment</p>
+      <div><img id="addresspaymentimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/address-payment.jpg" alt="amazon-pay-address-payment"></div>
+    </div>
+  
+    <div class="standard-autopay">
+      <p>Authorize Recurring Payments</p>
+      <div><img id="confirmationimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/confirm.jpg" alt="amazon-pay-confirm"></div>
+    </div>
+  
+    <div>
+      <p>Marketing Logo</p>
+      <div><img id="marketinglogoimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/marketing-logo.jpg" alt="amazon-pay-marketing-logo"></div>
+    </div>
+
+    <div class="jp-imgs region-imgs">
+      <h4 style="margin-top: 40px;">* click the image to download</h4>
+      <p>Amazon Login</p>
+      <div style="max-width:60% !important;margin: 0 auto;"><img id="amazonloginimg" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/jp/amazon-login.png" alt="amazon-pay-login"></div>
+    </div>
+  </div>
+
+  <div id="maxo-payment">
+    <div class="settings">
+      <div class="setting">
+        <span>device</span>
+        <span class="device">
+          <select name="device" id="device">
+            <option value="pc" selected>desktop</option>
+            <option value="sp">mobile</option>
+          </select>
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <p>Amazon Pay Button</p>
+      <div><img id="maxobuttonimg" src="https://s3-ap-northeast-1.amazonaws.com/amazonpay-mockup-tool/image/jp/MAXO_button_jp.png" alt="maxo-button"></div>
+    </div>
+
+    <div>
+      <p>Amazon Login</p>
+      <div><img id="maxologinimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_signin.jpg" alt="maxo-login"></div>
+    </div>
+
+    <div id="maxo-pc">
+      <h4 style="margin-top: 30px;">* click the image to download</h4>
+      <div class="maxo-onetime maxo-autopay">
+        <p>Choose Address</p>
+        <div><img id="maxoaddressimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_choose-address_pc.png" alt="maxo-address"></div>
+      </div>
+      <div class="maxo-onetime maxo-autopay">
+        <p>Choose Payment</p>
+        <div><img id="maxopaymentimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_choose-payment_pc.png" alt="maxo-payment"></div>
+      </div>
+      <div class="maxo-onetime maxo-autopay">
+        <p>Processing</p>
+        <div><img id="maxoprocessingimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_processing_pc.png" alt="maxo-processing"></div>
+      </div>
+      <div class="maxo-onetime">
+        <p>Continue Page</p>
+        <div><img id="maxocontinueimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_continue-page_pc.png" alt="maxo-continue"></div>
+      </div>
+      <div class="maxo-autopay">
+        <p>Continue Page</p>
+        <div><img id="maxo-recurring-continueimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_recurring-continue-page_pc.png" alt="maxo-continue"></div>
+      </div>
+      <div class="maxo-autopay">
+        <p>Continue Page with Reminder</p>
+        <div><img id="maxo-recurring-continue-reminder-img-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_recurring-continue-page-reminder_pc.png" alt="maxo-continue-reminder"></div>
+      </div>
+      <div class="maxo-onetime maxo-autopay">
+        <p>Decline</p>
+        <div><img id="maxodeclineimg-pc" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_decline_pc.png" alt="maxo-decline"></div>
+      </div>
+    </div>
+
+    <div id="maxo-sp" class="maxo-sp">
+      <h4 style="margin-top: 30px;">* click the image to download</h4>
+      <div class="maxo-onetime maxo-recurring">
+        <p>Choose Address</p>
+        <div><img id="maxoaddressimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_choose-address_sp.png" alt="maxo-address"></div>
+      </div>
+      <div class="maxo-onetime maxo-recurring">
+        <p>Choose Payment</p>
+        <div><img id="maxopaymentimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_choose-payment_sp.png" alt="maxo-payment"></div>
+      </div>
+      <div class="maxo-onetime maxo-recurring">
+        <p>Processing</p>
+        <div><img id="maxoprocessingimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_processing_sp.png" alt="maxo-processing"></div>
+      </div>
+      <div class="maxo-onetime">
+        <p>Continue Page</p>
+        <div><img id="maxocontinueimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_continue-page_sp.png" alt="maxo-continue"></div>
+      </div>
+      <div class="maxo-autopay">
+        <p>Continue Page</p>
+        <div><img id="maxo-recurring-continueimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_recurring-continue-page_sp.png" alt="maxo-continue"></div>
+      </div>
+      <div class="maxo-autopay">
+        <p>Continue Page with Notice</p>
+        <div><img id="maxo-recurring-continue-noticeimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_recurring-continue-page-notice_sp.png" alt="maxo-continue-notice"></div>
+      </div>
+      <div class="maxo-autopay">
+        <p>Continue Page with Reminder</p>
+        <div><img id="maxo-recurring-continue-reminder-img-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_recurring-continue-page-reminder_sp.png" alt="maxo-continue-reminder"></div>
+      </div>
+      <div class="maxo-onetime maxo-recurring">
+        <p>Decline</p>
+        <div><img id="maxodeclineimg-sp" class="downloadimg" src="https://amazonpay-mockup-tool.s3-ap-northeast-1.amazonaws.com/image/us/MAXO_decline_sp.png" alt="maxo-decline"></div>
+      </div>
+    </div>
+  </div>
+
+  <p></p>
+
+ </div>
+
+  <script src="./panel.js"></script>
+</body>
+
+</html>

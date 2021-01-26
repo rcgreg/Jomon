@@ -1,0 +1,95 @@
+.mockup-resizable {
+  overflow: hidden;
+  resize: both;
+  border: 1px dotted #000000;
+}
+
+.mockup-draggable {
+  position: absolute !important;
+  /* z-index: 100000 !important; */
+}
+
+.mockup-draggable-handler {
+  font-size: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background : #F2F2F2;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  height: 120px;
+  line-height: 80px;
+  opacity: 0.5;
+  cursor: move;
+}
+
+.mockup-draggable-handler-disable {
+  font-size: 25px;
+  height: 120px;
+  opacity: 0;
+}
+
+.mockup-draggable-content {
+  height: calc(100% - 120px);
+}
+
+.mockup-draggable-textarea {
+  width: 100% !important;
+  background-color: transparent;
+  overflow:hidden;
+  height:auto;
+  padding:0;
+  resize: none;
+  border: none;
+  min-height: 50px;
+  text-align: left !important;
+  color: black;
+  font-size: 15px;
+}
+
+.editablePlaceholder[contenteditable=true]:empty:before {
+	position: absolute;
+	color: #aaa;
+	content: attr(data-placeholder);
+}
+
+.mockup-dragging {
+  cursor: move;
+  /*z-index: 10000001 !important;*/
+}
+
+.mockup-dragResizePanel {
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 0px !important;
+  height: initial;
+  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif" !important;
+}
+
+.mockup-draggable-close {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  border-style: none;
+}
+.mockup-draggable-close:hover {
+  color: #17a2b8;
+}
+
+.link-disable {
+  pointer-events:none !important;
+  cursor:text !important;
+  text-decoration:none !important;
+}
+
+.terms-service {
+  color: blue !important;
+  text-decoration: underline !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
