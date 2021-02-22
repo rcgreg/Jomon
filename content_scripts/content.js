@@ -201,7 +201,7 @@ const panel = {
 
 /* Add Panel to image */
 appendPanel = ( mutation ) => {
-  Array.slice( mutation.addedNodes ).forEach( ( node ) => {
+  mutation.addedNodes.forEach( ( node ) => {
     if ( node.localName === 'img' && node.offsetParent ) { // When you insert an image
 
       if ( panel.contains( node.offsetParent ) ) {

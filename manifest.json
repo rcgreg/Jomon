@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "jomon",
   "description": "You can add on Amazon Pay Buttons on the existing page.",
-  "version": "1.3",
+  "version": "1.3.1",
   "applications": {
     "gecko": {
       "id":"itshige@amazon.com",
