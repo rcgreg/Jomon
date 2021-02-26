@@ -30,8 +30,8 @@ const header = {
     return elem;
   },
   getHeight () {
-    let head = document.getElementsByClassName( this.className )[0]; 
-    return head.style.height; //To be able to get the height of
+    let head = document.getElementsByClassName( this.className )[0]; //To be able to get the height of
+    return head.style.height;
   },
   className: 'mockup-draggable-handler'
 }
@@ -162,7 +162,7 @@ const panel = {
     this.appendCommon( elem, () => {
       let body = content.create();
       body.appendChild( elem.firstChild ); //Set the image at the beginning of the body
-      body.appendChild( textarea.create() ); //Set textarea below the image
+      body.appendChild( textarea.create() ); //Set textarea
       return body;
     } );
   },
